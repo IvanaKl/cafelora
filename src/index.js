@@ -1,4 +1,5 @@
 import './style.css';
+import { Layer } from './Layer/index';
 
 console.log('funguju!');
 
@@ -31,3 +32,27 @@ orderBtnElm.addEventListener('click', () => {
     ordered = false;
   }
 });
+
+/*úkol 5*/
+
+const drinkInfoElm = document.querySelector('#drink__info');
+drinkInfoElm.innerHTML +=
+  Layer({
+    color: '#feeeca',
+    label: 'mléčná pěna',
+  }) +
+  Layer({
+    color: '#fed7b0',
+    label: 'teplé mléko',
+  }) +
+  Layer({
+    color: '#613916',
+    label: 'espresso',
+  });
+
+const seznamIng = document.querySelectorAll('#drink__info');
+for (let i = i; i < seznamIng.length; i++) {
+  seznamIng[i].addEventListener('click', () => {
+    seznamIng.classList.toggle('drinks-list');
+  });
+}
