@@ -12,11 +12,11 @@
           <div class="site-logo"></div>
           <div class="navigation">
             <button id="nav-btn" class="nav-btn"></button>
-            <nav class="nav-closed">
+            <nav class="nav-closed" id="nav">
               <a href="#">domů</a>
-              <a href="#">menu</a>
-              <a href="#">galerie</a>
-              <a href="#">kontakt</a>
+              <a href="#menu" class="nav-link">menu</a>
+              <a href="#gallery" class="nav-link">galerie</a>
+              <a href="#kontakt" class="nav-link">kontakt</a>
             </nav>
           </div>
         </div>
@@ -30,7 +30,7 @@
     </section>
 
     <section class="menu">
-      <div class="container">
+      <div id="menu" class="container">
         <h2>Naše nabídka</h2>
         <p class="menu-intro">
           Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
@@ -76,13 +76,13 @@
       </div>
     </section>
 
-    <section class="gallery"></section>
+    <section id="gallery" class="gallery"></section>
 
     <section>
       <div class="container">
         <h2>Kde nás najdete</h2>
         <div class="contacts">
-          <div class="contacts__address">
+          <div id="kontakt" class="contacts__address">
             Na Mýtě 240 <br />
             514 03 Byšky nad Jizerou <br />
             Tel: +420 775 334 427
